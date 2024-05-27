@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/sokor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner content{
+    max-width: 800px;
+}
+.banner h2{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.banner p{
+    padding-top: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+span{
+    color: teal;
+}
+.main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main h1{
+    color: white;
+    padding: 15px;  
+}
+span{
+    color: teal;
+}
+.navbar{
+    padding: 20px;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar li{
+    display: inline-block;
+    padding: 1em;
+}
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    background-color: teal;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.dropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.dropdown li{
+    display: block;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    height: 80vh;
+    background-image: url(img/outdoors-landscape-nature-scenery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.about img{
+    margin-top: 60px;
+    width: 500px;
+    border: 5px solid teal;
+    border-radius: 100px ;
+    box-sizing: border-box;
+    
+}
+.about-text{
+    width: 550px;
+}
+.main-second{
+    width: 1130px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text h2{
+    color: aliceblue;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 15px;
+    font-size: 20px;
+    margin: 10px;
+}
+.about-text p{
+    color: aliceblue;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 18px;
+    padding-top: 40px;
+}
+.about-text span{
+    color: teal;
+}
+button{
+    margin-top: 20px;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 700px){
+    .welcome h1{
+        font-size: 20px
+    }
+    /*para sa mobile menu btn*/
+    .navbar{
+        display: block;
+    }
+    .navbar ul{
+        position: absolute;
+        background: gray;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    
+}
