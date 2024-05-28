@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}  
+.logo{
+    
+    width: 100px;
+    border-radius: 99px;
+    margin: 35px;
+    
+}
+.main{  
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    
+}
+.navbar{
+    margin: 40px;
+    padding-left: 6%;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar li{
+    display: inline-block;
+    padding: 2em;
+    
+}
+.navbar a{
+    padding-right: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    background-color: gray;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+/*end of header*/
+.pics{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+.pics img{
+   margin: 85px;
+   
+   width: 25%;
+
+}
+/*TABS*/
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding-top: 1%;
+    
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.tab:hover, .tab:focus, .tab.active {
+    background-color: #c0c0c0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+   
+}
+.tab-content.active h2{
+    margin: 30px;
+}
+.Temp{
+    background-color:  rgb(224, 224, 224);
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-size: 35px;
+    color: gray;
+    padding-bottom: 20%;
+    
+}
+
+.Temp h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.Temp img{
+   margin: 10px;
+   width: 30%;
+
+}

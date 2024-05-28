@@ -1,0 +1,67 @@
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    height: 80vh;
+    background-image: url(img/outdoors-landscape-nature-scenery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.about img{
+    margin-top: 60px;
+    width: 500px;
+    border: 5px solid teal;
+    border-radius: 100px ;
+    box-sizing: border-box;
+    
+}
+.about-text{
+    width: 550px;
+}
+.main-second{
+    width: 1130px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text h2{
+    color: aliceblue;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 15px;
+    font-size: 20px;
+    margin: 10px;
+}
+.about-text p{
+    color: aliceblue;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 18px;
+    padding-top: 40px;
+}
+.about-text span{
+    color: teal;
+}
+button{
+    margin-top: 20px;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
